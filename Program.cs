@@ -90,7 +90,7 @@ namespace DriveLogger
             {
                 float totalSizeGb = (float)drive.TotalSize / (1024 * 1024 * 1024);
                 float totalFreeSpaceGb = (float)drive.TotalFreeSpace / (1024 * 1024 * 1024);
-                return $"{totalSizeGb:F2},{totalFreeSpaceGb:F2}";
+                return $"{totalSizeGb:F4},{totalFreeSpaceGb:F4}";
             }
             else
             {
