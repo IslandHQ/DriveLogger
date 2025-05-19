@@ -28,6 +28,33 @@ dotnet build
 dotnet run --project DriveLogger.csproj
 ```
 
+## Usage
+
+Instructions on how to use the DriveLogger application.
+
+1. **Start the application** using the command:
+```bash
+dotnet run --project DriveLogger.csproj
+```
+   - This will compile and run the project if not already built.
+
+2. **Access the application** via your browser at `http://localhost:5000` (or the appropriate port if configured differently).
+
+3. **Use the provided features** to monitor drive operations:
+   - Real-time logs are displayed in the web interface.
+   - Filter logs by severity (info, warning, error).
+   - Export logs as CSV or JSON.
+
+4. **Configuration**:
+   - Modify `appsettings.json` for logging thresholds and output formats.
+   - Set environment variables like `LOG_LEVEL=Debug` for detailed logging.
+
+5. **Build and Test**:
+   ```bash
+   dotnet build
+   dotnet test
+   ```
+
 ## Project Structure
 
 - `DriveLogger.csproj` - Main project file
